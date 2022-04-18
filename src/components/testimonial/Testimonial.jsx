@@ -1,7 +1,7 @@
 import React from 'react';
 import './testimonial.css';
 import Avatar from '../../assests/about-image.png';
-
+import kashif from '../../assests/kashif.jpeg';
 // import Swiper core and required modules
 import { Pagination, Autoplay, EffectFade } from 'swiper';
 
@@ -32,16 +32,16 @@ const Testimonial = () => {
           </div>
           <h5 className='client__name'>Abdul Mateen</h5>
           <small className='client__review'>
-            Had an amazing experience in working wiht Muddasar.../
+            Had an amazing experience in working wiht Muddasar.
           </small>
         </SwiperSlide>
         <SwiperSlide className='testimonial'>
           <div className='client__avatar'>
-            <img src={Avatar} />
+            <img src={kashif} />
           </div>
-          <h5 className='client__name'>Abdul Mateen</h5>
+          <h5 className='client__name'>Kashif Usman</h5>
           <small className='client__review'>
-            Had an amazing experience in working wiht Muddasar.../
+            Had a great experience in working with Muddasar.
           </small>
         </SwiperSlide>
       </Swiper>

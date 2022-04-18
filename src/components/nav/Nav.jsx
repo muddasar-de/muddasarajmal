@@ -36,7 +36,7 @@ const Nav = () => {
         className={acvtiveNav === '#experience' ? 'active' : ''}>
         <BiBook />
       </a>
-      <a
+      {/* <a
         href='#services'
         data-toggle='tooltip'
         data-placement='bottom'
@@ -44,7 +44,7 @@ const Nav = () => {
         onClick={() => setActiveNav('#services')}
         className={acvtiveNav === '#services' ? 'active' : ''}>
         <RiServiceLine />
-      </a>
+      </a> */}
       <a
         href='#portfolio'
         data-toggle='tooltip'
