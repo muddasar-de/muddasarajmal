@@ -1,10 +1,11 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { useEffect } from 'react';
 import './header.css';
 import CTA from './CTA';
 import Me from '../../assests/me.png';
 import HeaderSocial from './HeaderSocial';
-import { BsArrowRight } from 'react-icons/bs';
+import { BsArrowRight, BsFillPenFill } from 'react-icons/bs';
+
 import { init } from 'ityped';
 const Header = () => {
   const textRef = useRef();
@@ -19,7 +20,10 @@ const Header = () => {
       <div className='container header__container'>
         <h5>Hello, I'm</h5>
         <h1>Muddasar Ajmal</h1>
-        <h5 className='text-light' ref={textRef}></h5>
+        <h5 className='text-light'>
+          <span ref={textRef}></span>
+          <BsFillPenFill />
+        </h5>
         <CTA />
         <HeaderSocial />
         <div className='me'>
