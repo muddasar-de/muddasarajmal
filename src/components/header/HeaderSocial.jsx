@@ -5,13 +5,13 @@ const HeaderSocial = () => {
   return (
     <div className='header__social'>
       <a href='https://www.linkedin.com/in/muddasar-de/' target='_blank'>
-        <BsLinkedin />
+        <BsLinkedin className='link_icon' />
       </a>
       <a href='https://www.behance.net/muddasar-de' target='_blank'>
-        <BsBehance />
+        <BsBehance className='link_icon' />
       </a>
       <a href='https://github.com/muddasar-de' target='_blank'>
-        <BsGithub />
+        <BsGithub className='link_icon' />
       </a>
     </div>
   );

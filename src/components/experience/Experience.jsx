@@ -49,6 +49,22 @@ const Experience = () => {
 
   const tools = [
     {
+      name: 'VS Code',
+      level: 'Experienced',
+      icon: <SiSublimetext className='experience__icons' />,
+    },
+    {
+      name: 'Git',
+      level: 'Intermediate',
+      icon: <FaGithubSquare className='experience__icons' />,
+    },
+    {
+      name: 'WordPress',
+      level: 'Experienced',
+      icon: <GrWordpress className='experience__icons' />,
+    },
+
+    {
       name: 'Adobe Illustrator',
       level: 'Experienced',
       icon: <SiAdobeillustrator className='experience__icons' />,
@@ -62,21 +78,6 @@ const Experience = () => {
       name: 'RabbitMQ',
       level: 'Intermediate',
       icon: <SiRabbitmq className='experience__icons' />,
-    },
-    {
-      name: 'Github',
-      level: 'Intermediate',
-      icon: <FaGithubSquare className='experience__icons' />,
-    },
-    {
-      name: 'WordPress',
-      level: 'Experienced',
-      icon: <GrWordpress className='experience__icons' />,
-    },
-    {
-      name: 'Sublime',
-      level: 'Intermediate',
-      icon: <SiSublimetext className='experience__icons' />,
     },
   ];
   return (

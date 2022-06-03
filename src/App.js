@@ -5,9 +5,10 @@ import Experience from './components/experience/Experience';
 import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
 import Nav from './components/nav/Nav';
-import Portfolio from './components/portfolio/Portfolio';
 import Testimonial from './components/testimonial/Testimonial';
 import Services from './components/services/Services';
+import Projects from './components/portfolio/Projects';
+import ProjItem from './components/port/ProjItem';
 function App() {
   return (
     <div className='App'>
@@ -16,10 +17,11 @@ function App() {
       <About />
       <Experience />
       {/* <Services /> */}
-      <Portfolio />
+      <Projects />
       <Testimonial />
       <Contact />
       {/* <Footer /> */}
+      {/* <ProjItem /> */}
     </div>
   );
 }

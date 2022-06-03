@@ -1,0 +1,94 @@
+/* ------------------- New Style Project Item ------------- */
+
+/* -------------------------Dialogue  ------------------------ */
+
+.dialogue_container {
+  width: var(--container-width-lg) !important;
+  /* margin: auto; */
+  padding: 5rem 2rem;
+}
+
+.dialogue_content {
+  padding: 0 15rem !important;
+}
+
+.dialogue_content h1 {
+  text-align: center;
+}
+
+/* -------------------------Portfolio Container ------------------------ */
+
+.portfolio__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.tabs_container {
+  display: block;
+  margin: auto;
+}
+.tabs .tab {
+  color: var(--color-white) !important;
+  transition: var(--transition);
+}
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: #1976d2 !important;
+}
+
+.portfolio__item {
+  background-color: var(--color-bg-variant);
+  border-radius: 0.5rem;
+  padding: 1.3rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.portfolio__item:hover {
+  background: transparent;
+  border-color: var(--color-primary);
+}
+.portfolio__item-image {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.portfolio__item > h3 {
+  margin: 0.5rem 0 0.5rem;
+}
+
+.img_container {
+  height: 16rem;
+}
+
+.portfolio__cta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ------------------Media Quries For Medium Screens----------------- */
+
+@media screen and (max-width: 1024px) {
+  .portfolio__container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .portfolio__item {
+    padding: 2rem;
+  }
+}
+
+/* ------------------Media Quries For Small Screens----------------- */
+
+@media screen and (max-width: 600px) {
+  .portfolio__container {
+    grid-template-columns: 1fr;
+  }
+  .portfolio__item {
+    padding: 1rem;
+  }
+  .dialogue_content {
+    padding: 0 2rem !important;
+  }
+}

@@ -46,12 +46,12 @@ const Nav = () => {
         <RiServiceLine />
       </a> */}
       <a
-        href='#portfolio'
+        href='#projects'
         data-toggle='tooltip'
         data-placement='bottom'
         title='Portfolio'
-        onClick={() => setActiveNav('#portfolio')}
-        className={acvtiveNav === '#portfolio' ? 'active' : ''}>
+        onClick={() => setActiveNav('#projects')}
+        className={acvtiveNav === '#projects' ? 'active' : ''}>
         <ImFilesEmpty />
       </a>
       <a
@@ -63,7 +63,6 @@ const Nav = () => {
         className={acvtiveNav === '#testimonial' ? 'active' : ''}>
         <MdOutlineReviews />
       </a>
-
       <a
         href='#contact'
         data-toggle='tooltip'

@@ -38,8 +38,9 @@ body {
   background-color: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
-  background-image: url('./assests/back.png');
-  background-size: cover;
+  /* background-image: url('./assests/back1.png'); */
+  background-size: auto;
+  background-blend-mode: screen;
 }
 
 .container {

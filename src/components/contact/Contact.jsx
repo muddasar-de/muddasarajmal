@@ -35,7 +35,7 @@ const Contact = () => {
           <article className='contact__option'>
             <BsEnvelopeOpenFill className='contact__option__icon' />
             <h4>Email</h4>
-            <h5>muddasarajmal@gmail.com</h5>
+            {/* <h5>muddasarajmal@gmail.com</h5> */}
             <a href='mailto:muddasarajmal@gmail.com' target='_blank'>
               Send a message
             </a>
@@ -43,7 +43,7 @@ const Contact = () => {
           <article className='contact__option'>
             <BsMessenger className='contact__option__icon' />
             <h4>Messenger</h4>
-            <h5>Muddasar.de</h5>
+            {/* <h5>Muddasar.de</h5> */}
             <a href='https://m.me/muddasar.de' target='_blank'>
               Send a message
             </a>
@@ -51,7 +51,7 @@ const Contact = () => {
           <article className='contact__option'>
             <IoLogoWhatsapp className='contact__option__icon' />
             <h4>Whastapp</h4>
-            <h5>+92 340 5963463</h5>
+            {/* <h5>+92 340 5963463</h5> */}
             <a
               href='https://api.whatsapp.com/send?phone+923405963463'
               target='_blank'>

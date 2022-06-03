@@ -5,6 +5,7 @@ import CTA from './CTA';
 import Me from '../../assests/me.png';
 import HeaderSocial from './HeaderSocial';
 import { BsArrowRight, BsFillPenFill } from 'react-icons/bs';
+import { bounceIn } from 'react-animations';
 
 import { init } from 'ityped';
 const Header = () => {
@@ -19,7 +20,7 @@ const Header = () => {
     <header>
       <div className='container header__container'>
         <h5>Hello, I'm</h5>
-        <h1>Muddasar Ajmal</h1>
+        <h1 className='my__name'>Muddasar Ajmal</h1>
         <h5 className='text-light'>
           <span ref={textRef}></span>
           <BsFillPenFill />
@@ -29,9 +30,12 @@ const Header = () => {
         <div className='me'>
           <img src={Me} alt='Sorry' />
         </div>
-        <a href='#contact' className='scroll__down'>
-          Scroll Down <BsArrowRight />
-        </a>
+        <div className='scroll_container'>
+          <a href='#contact' className='scroll__down'>
+            Scroll Down
+            {/* <BsArrowRight /> */}
+          </a>
+        </div>
       </div>
     </header>
   );
