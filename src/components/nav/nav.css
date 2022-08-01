@@ -20,10 +20,23 @@ nav a {
   border-radius: 50%;
   display: flex;
   color: var(--color-light);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 nav a.active {
-  background-color: var(--color-bg);
+  background-color: var(--color-primary-variant);
   color: var(--color-white);
+}
+
+/* ------------------Media Quries For Medium Screens----------------- */
+
+@media screen and (max-width: 1024px) {
+}
+
+/* ------------------Media Quries For Small Screens----------------- */
+
+@media screen and (max-width: 600px) {
+  nav a {
+    font-size: 1.1rem;
+  }
 }

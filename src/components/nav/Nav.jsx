@@ -8,7 +8,7 @@ import { MdOutlineReviews } from 'react-icons/md';
 const Nav = () => {
   const [acvtiveNav, setActiveNav] = useState('#');
   return (
-    <nav>
+    <nav className='navbar'>
       <a
         href='#'
         data-toggle='tooltip'
@@ -28,6 +28,15 @@ const Nav = () => {
         <AiOutlineUser />
       </a>
       <a
+        href='#services'
+        data-toggle='tooltip'
+        data-placement='bottom'
+        title='Services'
+        onClick={() => setActiveNav('#services')}
+        className={acvtiveNav === '#services' ? 'active' : ''}>
+        <RiServiceLine />
+      </a>
+      <a
         href='#experience'
         data-toggle='tooltip'
         data-placement='bottom'
@@ -36,15 +45,7 @@ const Nav = () => {
         className={acvtiveNav === '#experience' ? 'active' : ''}>
         <BiBook />
       </a>
-      {/* <a
-        href='#services'
-        data-toggle='tooltip'
-        data-placement='bottom'
-        title='Services'
-        onClick={() => setActiveNav('#services')}
-        className={acvtiveNav === '#services' ? 'active' : ''}>
-        <RiServiceLine />
-      </a> */}
+
       <a
         href='#projects'
         data-toggle='tooltip'
@@ -54,7 +55,7 @@ const Nav = () => {
         className={acvtiveNav === '#projects' ? 'active' : ''}>
         <ImFilesEmpty />
       </a>
-      <a
+      {/* <a
         href='#testimonial'
         data-toggle='tooltip'
         data-placement='bottom'
@@ -62,7 +63,7 @@ const Nav = () => {
         onClick={() => setActiveNav('#testimonial')}
         className={acvtiveNav === '#testimonial' ? 'active' : ''}>
         <MdOutlineReviews />
-      </a>
+      </a> */}
       <a
         href='#contact'
         data-toggle='tooltip'

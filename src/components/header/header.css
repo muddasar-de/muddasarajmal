@@ -10,32 +10,18 @@ header {
 }
 
 .my__name {
-  -webkit-animation: tracking-in-expand 5s cubic-bezier(0.215, 0.61, 0.355, 1)
-    both;
-  animation: tracking-in-expand 5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
-@-webkit-keyframes tracking-in-expand {
+@keyframes text-focus-in {
   0% {
-    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
     opacity: 0;
   }
-  40% {
-    opacity: 0.6;
-  }
   100% {
-    opacity: 1;
-  }
-}
-@keyframes tracking-in-expand {
-  0% {
-    letter-spacing: -0.5em;
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
     opacity: 1;
   }
 }
@@ -62,7 +48,6 @@ header {
 }
 
 .header__social a {
-  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
   animation: heartbeat 1.5s ease-in-out infinite both;
 }
 
@@ -71,40 +56,6 @@ header {
   height: auto;
 }
 
-@-webkit-keyframes heartbeat {
-  from {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transform-origin: center center;
-    transform-origin: center center;
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  10% {
-    -webkit-transform: scale(0.91);
-    transform: scale(0.91);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  17% {
-    -webkit-transform: scale(0.98);
-    transform: scale(0.98);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  33% {
-    -webkit-transform: scale(0.87);
-    transform: scale(0.87);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  45% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-}
 @keyframes heartbeat {
   from {
     -webkit-transform: scale(1);
@@ -147,6 +98,14 @@ header {
   background: var(--color-primary);
 }
 
+.scroll__down::after {
+  content: '';
+  width: 1px;
+  position: relative;
+  height: 2rem;
+  background: var(--color-primary);
+}
+
 /* ---------------- Image ------------------------- */
 
 .me {
@@ -166,6 +125,23 @@ header {
   border-radius: 12rem 12rem 0 0;
   overflow: hidden;
   padding: 3rem 1.5rem 1.5rem 1.5rem;
+}
+
+.me img {
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 /* ---------------- Scroll Down ------------------------- */

@@ -6,6 +6,7 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import { AiOutlineClose } from 'react-icons/ai';
 import Slide from '@mui/material/Slide';
+
 import { Checks } from './Projects.jsx';
 import './projects.css';
 
@@ -24,11 +25,9 @@ const Dialogue = (props) => {
   };
   return (
     <div className='dialogue_container'>
-      {/* <Button variant='outlined' onClick={handleClickOpen}>
-        Open full-screen dialog
-      </Button> */}
       <Dialog
         fullScreen
+        className='dialogue'
         open={open}
         onClose={handleClose}
         TransitionComponent={Transition}>
@@ -41,9 +40,9 @@ const Dialogue = (props) => {
             aria-label='close'>
             <AiOutlineClose />
           </IconButton>
-          {/* <Typography sx={{ ml: 2, flex: 1 }} variant='h6' component='div'>
+          <Typography sx={{ ml: 2, flex: 1 }} variant='h6' component='div'>
             {props.data.name}
-          </Typography> */}
+          </Typography>
         </Toolbar>
         {/* </AppBar> */}
         <div className='dialogue_content '>

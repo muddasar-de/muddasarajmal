@@ -32,34 +32,28 @@ const Contact = () => {
       <h2>Contact Me</h2>
       <div className='container contact__container'>
         <div className='contact__options'>
-          <article className='contact__option'>
-            <BsEnvelopeOpenFill className='contact__option__icon' />
-            <h4>Email</h4>
-            {/* <h5>muddasarajmal@gmail.com</h5> */}
-            <a href='mailto:muddasarajmal@gmail.com' target='_blank'>
-              Send a message
-            </a>
-          </article>
-          <article className='contact__option'>
-            <BsMessenger className='contact__option__icon' />
-            <h4>Messenger</h4>
-            {/* <h5>Muddasar.de</h5> */}
-            <a href='https://m.me/muddasar.de' target='_blank'>
-              Send a message
-            </a>
-          </article>
-          <article className='contact__option'>
-            <IoLogoWhatsapp className='contact__option__icon' />
-            <h4>Whastapp</h4>
-            {/* <h5>+92 340 5963463</h5> */}
-            <a
-              href='https://api.whatsapp.com/send?phone+923405963463'
-              target='_blank'>
-              Send a message
-            </a>
-          </article>
+          <a href='mailto:muddasarajmal@gmail.com' target='_blank'>
+            <article className='contact__option'>
+              <BsEnvelopeOpenFill className='contact__option__icon' />
+              <h4>Email</h4>
+            </article>
+          </a>
+          <a href='https://m.me/muddasar.de' target='_blank'>
+            <article className='contact__option'>
+              <BsMessenger className='contact__option__icon' />
+              <h4>Messenger</h4>
+            </article>
+          </a>
+          <a
+            href='https://api.whatsapp.com/send?phone+923405963463'
+            target='_blank'>
+            <article className='contact__option'>
+              <IoLogoWhatsapp className='contact__option__icon' />
+              <h4>Whastapp</h4>
+            </article>
+          </a>
         </div>
-        <form ref={form} onSubmit={sendEmail}>
+        <form ref={form} onSubmit={sendEmail} className='contact__form'>
           <input
             type='text'
             name='name'
@@ -69,7 +63,7 @@ const Contact = () => {
           <input type='email' name='email' placeholder='Your Email' required />
           <textarea
             name='message'
-            rows='7'
+            rows='5'
             placeholder='Your Message'
             required
           />

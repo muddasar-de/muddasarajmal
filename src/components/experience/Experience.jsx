@@ -2,7 +2,7 @@ import React from 'react';
 import './experience.css';
 import { GrWordpress } from 'react-icons/gr';
 import { AiFillHtml5 } from 'react-icons/ai';
-import { FaCss3Alt, FaReact, FaGithubSquare } from 'react-icons/fa';
+import { FaCss3Alt, FaReact, FaGithubSquare, FaDocker } from 'react-icons/fa';
 import {
   SiBootstrap,
   SiTailwindcss,
@@ -15,6 +15,17 @@ import {
 
 const Experience = () => {
   const techs = [
+    {
+      name: 'React',
+      level: 'Intermediate',
+      icon: <FaReact className='experience__icons' />,
+    },
+    {
+      name: 'JavaScript',
+      level: 'Experienced',
+      icon: <SiJavascript className='experience__icons' />,
+    },
+
     {
       name: 'HTML',
       level: 'Experienced',
@@ -34,16 +45,6 @@ const Experience = () => {
       name: 'Tailwind',
       level: 'Intermediate',
       icon: <SiTailwindcss className='experience__icons' />,
-    },
-    {
-      name: 'JavaScript',
-      level: 'Experienced',
-      icon: <SiJavascript className='experience__icons' />,
-    },
-    {
-      name: 'React',
-      level: 'Intermediate',
-      icon: <FaReact className='experience__icons' />,
     },
   ];
 
@@ -75,9 +76,9 @@ const Experience = () => {
       icon: <SiAdobephotoshop className='experience__icons' />,
     },
     {
-      name: 'RabbitMQ',
+      name: 'Docker',
       level: 'Intermediate',
-      icon: <SiRabbitmq className='experience__icons' />,
+      icon: <FaDocker className='experience__icons' />,
     },
   ];
   return (

@@ -1,7 +1,7 @@
 import './projects.css';
 import HoverVideoPlayer from 'react-hover-video-player';
-import Demo from '../../assests/demo.mp4';
-import { FaLink } from 'react-icons/fa';
+import Demo from '../../assests/rec-tab.webm';
+
 const ProjectItem = (props) => {
   return (
     <article className='portfolio__item'>
@@ -13,10 +13,11 @@ const ProjectItem = (props) => {
           <img src={props.featured_img} className='img_container'></img>
         </a>
       </div>
+      <small className='catagory'> Catagory: {props.catagory}</small>
       <h3>{props.name}</h3>
       <div className='portfolio__cta'>
         <a href={props.behance} target='_blank' className='btn btn-primary'>
-          Live Demo
+          View More
         </a>
       </div>
     </article>
@@ -26,7 +27,7 @@ const ProjectItem = (props) => {
 export default ProjectItem;
 
 /* <HoverVideoPlayer
-            videoSrc={Demo}
+            videoSrc="https://www.loom.com/share/a58f99f87a5848cfb4eb388956db7728"
             className='video_container'
             pausedOverlay={
               <img

@@ -34,9 +34,10 @@ const About = () => {
             </article>
           </div>
           <p>
-            To seek and maintain a full-time position that offers professional
-            challenges utilizing interpersonal skills, excellent time management
-            and problem-solving skills.
+            Recently graduated as Computer Scienctist, interested to seek and
+            maintain a full-time position that offers professional challenges
+            utilizing interpersonal skills, excellent time management and
+            problem-solving skills.
           </p>
           <a href='#contact' className='btn btn-primary'>
             Let's Talk
